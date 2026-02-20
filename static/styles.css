@@ -1,1 +1,161 @@
-hello
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --brown: #0f1108;
+  --white: #f7f6f5;
+  --pink: #f2e9de;
+}
+
+body {
+  background-color: var(--pink);
+  font-family: "Montserrat", sans-serif;
+  margin: 3em 5em;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.15;
+  font-weight: 200;
+}
+
+.header-text {
+  padding-bottom: 3em;
+}
+
+.header-title {
+  padding-top: 5rem;
+}
+
+.let-me-see {
+  color: white;
+  background-color: black;
+  border: black;
+  border-radius: 0.25em;
+  padding: 1em 2em;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  text-decoration: none;
+  /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
+  box-shadow: inset 0 0 0.5em 0 var(--brown), 0 0 0.5em 0 var(--brown);
+}
+
+.let-me-see:hover {
+  border: white;
+  color: black;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 30%;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.listen {
+  display: table;
+  margin: 1em 10em;
+}
+
+.arrow {
+  display: table;
+  margin: 10em auto;
+  /* transition: transform ease-in 150ms; */
+}
+
+.card-img {
+  border-radius: 0.25em;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.card-img:hover {
+  opacity: 50%;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.images {
+  display: inline;
+}
+
+.title:hover::after {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 5%;
+}
+
+.one:hover::after {
+  content: "Random photo.";
+}
+
+.two:hover::after {
+  content: "Before Covid.";
+}
+
+.three:hover::after {
+  content: "Bageshwar Baba ki Jai!";
+}
+
+.four:hover::after {
+  content: "Busier than Elon Musk.";
+}
+
+.five:hover::after {
+  content: "Hopfully that ballon went far.";
+}
+
+.six:hover::after {
+  content: "Who is he?.";
+}
+
+.seven:hover::after {
+  content: "first holi together.";
+}
+
+.eight:hover::after {
+  content: "ummmmm";
+}
+
+.nine:hover::after {
+  content: "one of the many photos from dinner at Woodlock.";
+}
+
+.ten:hover::after {
+  content: "an older photo of dinner at Woodlock.";
+}
+
+.eleven:hover::after {
+  content: "visiting day at camp.";
+}
+
+.twelve:hover::after {
+  content: "the red sox world series.";
+}
